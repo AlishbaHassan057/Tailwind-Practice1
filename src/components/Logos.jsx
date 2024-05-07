@@ -3,7 +3,7 @@ import React from "react";
 const Logos = () => {
   return (
     <>
-      <div className="container w-[80%] mx-auto mt-20">
+      <div className="container w-[80%] mx-auto md:mt-20 sm:[-3rem]">
         <h1 className="mx-auto text-center text-2xl font-bold">Our Clients</h1>
         <p className="text-center text-bold">
           We have been working with some Fortune 500+ clients

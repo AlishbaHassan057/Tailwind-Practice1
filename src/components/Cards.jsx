@@ -3,8 +3,8 @@ import React from "react";
 const Cards = () => {
   return (
     <div className="container w-[70%] mt-4 flex mx-auto">
-      <div className="flex flex-wrap -mx-4 gap-20">
-        <div className="w-full sm:w-1/2 md:w-[18rem] px-2 mb-4 text-center">
+      <div className="flex flex-wrap mx-4 gap-20">
+        <div className="w-[80%] sm:w-[70%] h-[16rem] mx-auto md:w-[18rem] px-2 mb-4 text-center">
           <div className="bg-white rounded-lg shadow-2xl p-6 h-full">
             <img
               src="https://nexcent-page.netlify.app/assets/Icon%20(1).png"
@@ -20,7 +20,7 @@ const Cards = () => {
             </p>
           </div>
         </div>
-        <div className="w-full sm:w-1/2 md:w-[18rem] px-2 mb-4 text-center">
+        <div className="w-[80%] sm:w-[70%] h-[16rem] mx-auto md:w-[18rem] px-2 mb-4 text-center">
           <div className="bg-white rounded-lg shadow-2xl p-6 h-full">
             <img
               src="https://nexcent-page.netlify.app/assets/Icon%20(2).png"
@@ -36,7 +36,7 @@ const Cards = () => {
             </p>
           </div>
         </div>
-        <div className="w-full sm:w-1/2 md:w-[18rem] px-2 mb-4 text-center">
+        <div className="w-[80%] sm:w-[70%] h-[16rem] mx-auto md:w-[18rem] px-2 mb-4 text-center">
           <div className="bg-white rounded-lg shadow-2xl p-6 h-full">
             <img
               src="https://nexcent-page.netlify.app/assets/Icon%20(1).png"

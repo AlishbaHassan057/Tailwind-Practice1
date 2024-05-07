@@ -12,7 +12,7 @@ const Navbar = () => {
           <h1 className="logo text-2xl font-bold">Nexcent</h1>
         </div>
         <div className="middle ">
-          <ul className="hidden  justify-around items-center gap-6 md:flex">
+          <ul className="hidden sm:hidden md:hidden  justify-around items-center gap-6 lg:flex">
             <li className="cursor-pointer hover:text-[#4CAF4F] transition-all">
               Home
             </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="hidden  items-center justify-around gap-2 md:flex">
+        <div className="hidden sm:hidden md:hidden items-center justify-around gap-2 lg:flex">
           <div className="button-right">
             <button className="bg-white text-black px-8 py-1 border border-[#4CAF4F] rounded-md hover:bg-[#4CAF4F] hover:text-white transition-all">
               Login
@@ -43,7 +43,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <GiHamburgerMenu className="sm:block md:hidden size-6 hover:cursor-pointer " />
+        <GiHamburgerMenu className="sm:block  md:block lg:hidden size-6 hover:cursor-pointer " />
       </div>
     </>
   );
