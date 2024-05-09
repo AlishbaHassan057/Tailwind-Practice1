@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { CiLocationArrow1 } from "react-icons/ci";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookMessenger } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaFacebookMessenger,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -14,68 +16,93 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     console.log("Submitted email:", email);
-
     setEmail("");
   };
 
   return (
-    <>
-      <div className="w-[80%] text-center mx-auto flex items-top justify-around bg-[#263238] text-white mb-[5rem] py-6 gap-0 mt-11">
-        <div className="mr-[-9rem]">
-          <h1 className="font-bold text-[19px] mt-4">Nexcent</h1>
-          <h1>Copyright © 2020 Nexcent ltd.</h1>
-          <h1>All rights reserved</h1>
-          <div className="flex items-center justify-around mt-2">
-            <div className="facbook">
-              <FaFacebook />
-            </div>
-            <div className="twitter ml-[-3rem]">
-              <FaTwitter />
-            </div>
-            <div className="messenger ml-[-3rem]">
-              <FaFacebookMessenger />
-            </div>
-            <div className="youtube ml-[-3rem]">
-              <FaYoutube />
-            </div>
+    <div className="w-full bg-gray-900 text-white py-8 px-4 md:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-between">
+        <div className="w-full md:w-1/4 lg:w-1/5 text-center md:text-left lg:text-left">
+          <h1 className="font-bold text-lg md:text-xl lg:text-2xl mb-4">
+            Nexcent
+          </h1>
+          <p className="text-sm md:text-base lg:text-lg mb-4">
+            Copyright © 2020 Nexcent ltd.
+          </p>
+          <p className="text-sm md:text-base lg:text-lg mb-4">
+            All rights reserved
+          </p>
+          <div className="flex items-center justify-center md:justify-start lg:justify-start">
+            <FaFacebook className="mr-2" />
+            <FaTwitter className="mr-2" />
+            <FaFacebookMessenger className="mr-2" />
+            <FaYoutube />
           </div>
         </div>
-        <div className="Second text-[14.5px] text-left ">
-          <h1 className="font-bold">Company</h1>
-          <h2>About Us</h2>
-          <h2>Contact Us</h2>
-          <h2>Blog</h2>
-          <h2>Pricing</h2>
-          <h2>Testimonials</h2>
+        <div className="w-full md:w-1/4 lg:w-1/5 mt-8 md:mt-0 lg:mt-0">
+          <div className="text-center md:text-left lg:text-left">
+            <h2 className="font-bold text-base md:text-lg lg:text-xl mb-2">
+              Company
+            </h2>
+            <ul>
+              <li className="text-sm md:text-base lg:text-lg mb-2">About Us</li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">
+                Contact Us
+              </li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">Blog</li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">Pricing</li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">
+                Testimonials
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="Second text-[14.5px] text-left ml-[-12rem]">
-          <h1 className="font-bold">Support</h1>
-          <h2>Help Center</h2>
-          <h2>Terms of service</h2>
-          <h2>Legal</h2>
-          <h2>Privacy policy</h2>
-          <h2>Status</h2>
+        <div className="w-full md:w-1/4 lg:w-1/5 mt-8 md:mt-0 lg:mt-0">
+          <div className="text-center md:text-left lg:text-left">
+            <h2 className="font-bold text-base md:text-lg lg:text-xl mb-2">
+              Support
+            </h2>
+            <ul>
+              <li className="text-sm md:text-base lg:text-lg mb-2">
+                Help Center
+              </li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">
+                Terms of service
+              </li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">Legal</li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">
+                Privacy policy
+              </li>
+              <li className="text-sm md:text-base lg:text-lg mb-2">Status</li>
+            </ul>
+          </div>
         </div>
-        <div className="Second text-[14.5px] text-left">
-          <h1 className="ml-[-14rem]">Stay up to date</h1>
-          <form className="ml-[-14rem] bg-transparent" onSubmit={handleSubmit}>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={handleChange}
-              style={{ backgroundColor: "transparent" }}
-              required
-            />
-            <button type="submit">
-              <CiLocationArrow1 size={18} />
-            </button>
-          </form>
+        <div className="w-full md:w-1/4 lg:w-1/5 mt-8 md:mt-0 lg:mt-0">
+          <div className="text-center md:text-left lg:text-left">
+            <h2 className="font-bold text-base md:text-lg lg:text-xl mb-2">
+              Stay up to date
+            </h2>
+            <form className="bg-transparent" onSubmit={handleSubmit}>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={handleChange}
+                className="py-2 px-3 w-full mb-2 md:mb-3 lg:mb-4 bg-gray-800 text-white rounded focus:outline-none focus:ring focus:border-blue-300"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-green-500 py-2 px-4 rounded text-white focus:outline-none hover:bg-green-600"
+              >
+                <CiLocationArrow1 size={18} />
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -8,22 +8,27 @@ const Achievements = () => {
   return (
     <>
       <div className="container w-[70%] mx-auto mb-14 ">
-        <h1 className="text-[#4CAF4F] font-bold text-[21.5px] text-center mb-[40px] sm:mt-9">
+        <h1 className="text-[#4CAF4F] font-bold text-[21.5px] text-center mb-[10px] sm:mt-9">
           Achievements
         </h1>
-        <div className="business flex items-center justify-around gap-0">
+        <div
+          className="flex-col text-center mx-auto flex items-center justify-around lg:gap-0 sm:flex-col md:flex-col lg:flex-row 
+          sm:mt-[-2rem] md:mt-[-3rem] lg:text-left lg:w-[100%]"
+        >
           {/* LEFT */}
-          <div className="leftb w-[50%]">
-            <h5>Helping a local</h5>
-            <h1 className="text-[#4CAF4F] font-bold text-[25px]">
+          <div className="order-first sm:w-[80%] sm:text-center lg:text-left  lg:w-[50%]  sm:order-first md:order-first">
+            <h5 className="sm:mt-[2rem] md:mt-12 lg:mt-12">Helping a local</h5>
+            <h1 className="w-[100%] text-[#4CAF4F] font-bold text-[25px]">
               business reinvent itself
             </h1>
-            <h2>We reached here with our hard work and dedication</h2>
+            <h2 className="lg:w-[100%]">
+              We reached here with our hard work and dedication
+            </h2>
           </div>
           {/* RIGHT */}
-          <div className="rightb w-[50%]">
-            <div className="members flex items-center justify-around w-[70%] gap-36">
-              <div className="memberright text-center mx-auto">
+          <div className="mt-[1rem] mx-auto order-last lg:mt-9 w-[100%] sm:order-last md:order-last">
+            <div className="mx-auto flex items-center justify-around w-[100%] gap-20 mt-4">
+              <div className="memberright">
                 <div className="people">
                   <GoPeople color="green" size="1.3rem" />
                 </div>
@@ -38,7 +43,7 @@ const Achievements = () => {
                 Event Bookings
               </div>
             </div>
-            <div className="members flex items-center justify-around w-[70%] gap-36 mt-4">
+            <div className="mx-auto flex items-center justify-around w-[100%] gap-20 mt-4">
               <div className="payright">
                 <div className="log">
                   <FaHandPointUp color="green" size="1.3rem" />
